@@ -3343,3 +3343,95 @@ Processing by SchedulesController#index as HTML
 Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.4ms | Allocations: 10274)
 
 
+Started GET "/schedules" for ::1 at 2023-04-11 22:49:00 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchedulesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/index.html.erb within layouts/application
+  [1m[36mSchedule Load (0.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules"[0m
+  ↳ app/views/schedules/index.html.erb:21
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "schedules"[0m
+  ↳ app/views/schedules/index.html.erb:48
+  Rendered schedules/index.html.erb within layouts/application (Duration: 26.2ms | Allocations: 8036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.8ms | Allocations: 22972)
+Completed 200 OK in 73ms (Views: 50.9ms | ActiveRecord: 0.5ms | Allocations: 27207)
+
+
+Started GET "/schedules/new" for ::1 at 2023-04-11 22:49:02 +0900
+Processing by SchedulesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/new.html.erb within layouts/application
+  Rendered shared/_error.html.erb (Duration: 0.8ms | Allocations: 196)
+  Rendered schedules/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2767)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 12107)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 12847)
+
+
+Started POST "/schedules" for ::1 at 2023-04-11 22:49:03 +0900
+Processing by SchedulesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "schedule"=>{"title"=>"", "start_at"=>"", "end_at"=>"", "all_day"=>"0", "memo"=>""}, "commit"=>"編集を完了する"}
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/new.html.erb within layouts/application
+  Rendered shared/_error.html.erb (Duration: 454.1ms | Allocations: 153800)
+  Rendered schedules/new.html.erb within layouts/application (Duration: 457.6ms | Allocations: 156666)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 464.6ms | Allocations: 164972)
+Completed 200 OK in 472ms (Views: 465.5ms | ActiveRecord: 0.0ms | Allocations: 166681)
+
+
+Started GET "/schedules" for ::1 at 2023-04-11 22:51:33 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SchedulesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/index.html.erb within layouts/application
+  [1m[36mSchedule Load (0.2ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules"[0m
+  ↳ app/views/schedules/index.html.erb:21
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "schedules"[0m
+  ↳ app/views/schedules/index.html.erb:48
+  Rendered schedules/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 8036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 22972)
+Completed 200 OK in 61ms (Views: 48.5ms | ActiveRecord: 0.5ms | Allocations: 27186)
+
+
+Started GET "/schedules/new" for ::1 at 2023-04-11 22:51:34 +0900
+Processing by SchedulesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/new.html.erb within layouts/application
+  Rendered shared/_error.html.erb (Duration: 0.8ms | Allocations: 196)
+  Rendered schedules/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2767)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 12118)
+Completed 200 OK in 34ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 12859)
+
+
+Started POST "/schedules" for ::1 at 2023-04-11 22:51:35 +0900
+Processing by SchedulesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "schedule"=>{"title"=>"", "start_at"=>"", "end_at"=>"", "all_day"=>"0", "memo"=>""}, "commit"=>"編集を完了する"}
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/new.html.erb within layouts/application
+  Rendered shared/_error.html.erb (Duration: 103.7ms | Allocations: 28914)
+  Rendered schedules/new.html.erb within layouts/application (Duration: 107.1ms | Allocations: 31659)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 113.7ms | Allocations: 39962)
+Completed 200 OK in 116ms (Views: 114.1ms | ActiveRecord: 0.0ms | Allocations: 41657)
+
+
+Started GET "/schedules" for ::1 at 2023-04-11 22:51:44 +0900
+Processing by SchedulesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering schedules/index.html.erb within layouts/application
+  [1m[36mSchedule Load (0.4ms)[0m  [1m[34mSELECT "schedules".* FROM "schedules"[0m
+  ↳ app/views/schedules/index.html.erb:21
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "schedules"[0m
+  ↳ app/views/schedules/index.html.erb:48
+  Rendered schedules/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1772)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.5ms | Allocations: 10001)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.7ms | Allocations: 10484)
+
+
