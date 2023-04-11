@@ -1,0 +1,50 @@
+<div class ="information">
+  <h3>予定一覧</h3>
+  <p><%= link_to "新規追加", :new_schedule ,class: "btn btn-submit" %></p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>タイトル</th>
+      <th>開始日</th>
+      <th>終了日</th>
+      <th>終日</th>
+      <th>詳細ページ</th>
+      <th>編集ページ</th>
+      <th>削除リンク</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <% @schedules.each do |schedule| %>
+      <tr>
+        <td><%= schedule.id %></td>
+        <td><%= schedule.title %></td>
+        <td><%= schedule.start_at %></td>
+        <td><%= schedule.end_at %></td>
+        <% if schedule.all_day == true %>        
+          <td>○</td>
+        <% else %>        
+          <td></td>
+        <% end %>
+        <td>
+          <%= link_to "詳細", schedule %>
+        </td>
+        <td>
+        	<%= link_to "編集", [:edit, schedule] %>
+        </td>
+        <td>
+          <%= link_to "削除", schedule, method: :delete, data: {confirm: "予定を削除しますか？"} %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<div class ="information">
+  <p><%= "合計予定数：#{@schedules.count}件" %></p>
+  <p><%= "本日の日付：#{Date.today.strftime("%Y/%m/%d")}" %></p>
+</div>
