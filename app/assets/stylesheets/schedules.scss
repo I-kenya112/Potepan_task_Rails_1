@@ -1,3 +1,70 @@
 // Place all the styles related to the schedules controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.nav {
+  color: white;
+  font-size: 14px;
+  padding: 18px 0;
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  background-color: #fbc25b;
+  padding: 10px 20px;
+}
+
+table td {
+  background-color: #f9ecd5;
+  padding: 10px 20px;
+}
+
+.back-index {
+  margin: 10px 0;
+
+}
+
+.information {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F6F6;
+  padding: 15px;
+}
+
+.edit-end {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 15px;
+}
+
+.btn {
+  padding: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.btn-submit {
+  background-color: #2862ff;
+  color: #ffffff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-cancel {
+  background-color: #ffffff;
+  color: #000000;
+}
